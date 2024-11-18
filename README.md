@@ -1,21 +1,21 @@
-# Problema de los Filósofos
+# Problema de los Filosofos
 
-Este proyecto es una implementación del clásico problema de los filósofos, que es un ejemplo fundamental de sincronización en la programación concurrente. En este escenario, varios filósofos se sientan a una mesa y alternan entre pensar y comer, utilizando tenedores compartidos. El objetivo es evitar la inanición y las condiciones de carrera.
+Este proyecto es una implementacion del clasico problema de los filosofos, que es un ejemplo fundamental de sincronizacion en la programacion concurrente. En este escenario, varios filosofos se sientan a una mesa y alternan entre pensar y comer, utilizando tenedores compartidos. El objetivo es evitar la inanición y las condiciones de carrera.
 
-## Descripción del Proyecto
+## Descripcion del Proyecto
 
-El programa simula la actividad de cinco filósofos que piensan y comen. Cada filósofo necesita dos tenedores para comer, y los tenedores están representados como mutexes. Para evitar que un filósofo se quede sin comida, se implementa un mecanismo de bloqueo que garantiza que cada filósofo pueda tomar los tenedores de manera segura. Además, se utiliza un mutex adicional para proteger el acceso al contador de comidas de cada filósofo.
+El programa simula la actividad de cinco filosofos que piensan y comen. Cada filosofo necesita dos tenedores para comer, y los tenedores estan representados como mutexes. Para evitar que un filosofo se quede sin comida, se implementa un mecanismo de bloqueo que garantiza que cada filosofo pueda tomar los tenedores de manera segura. Ademas, se utiliza un mutex adicional para proteger el acceso al contador de comidas de cada filosofo.
 
 ### Problemas Abordados
 
-- **Inanición**: Asegurarse de que todos los filósofos tengan la oportunidad de comer.
-- **Condiciones de carrera**: Evitar que múltiples hilos accedan y modifiquen el mismo recurso (contador de comidas) al mismo tiempo.
+- **Inanicion**: Asegurarse de que todos los filosofos tengan la oportunidad de comer.
+- **Condiciones de carrera**: Evitar que multiples hilos accedan y modifiquen el mismo recurso (contador de comidas) al mismo tiempo.
 
 ## Requisitos
 
-Para compilar y ejecutar este proyecto, necesitarás:
+Para compilar y ejecutar se necesita:
 
-- Un compilador de C++ (como g++, clang++, etc.)
+- Un compilador de C++ 
 - C++11 o superior para las características de hilos y mutexes.
 
 ## Compilación
